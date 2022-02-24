@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS STYLING.css">
+    <script src="https://kit.fontawesome.com/fa2c5f82ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Assign1</title>
+</head>
+
+<body>
+    <section id="PARTA">
+        <h1>Part A - Geeky Page Content</h1>
+
+        <div class="border">
+            <h2>
+                CSS Flexbox: <code>flex-wrap</code><a href=""><sup>[1]</sup></a>
+            </h2>
+            <p>
+                <span class="letter">W</span>ith a flexbox layout, by default flex items will all try to fit onto one
+                line.You can
+                change that and
+                allow
+                the
+                items to wrap as needed with this property.
+            </p>
+            <h3>
+                Usage
+            </h3>
+            <p>This property supports the following values:</p>
+            <ul class="arrowright">
+                <li><code>nowarap</code><em><b>(default)</b></em>: all flex items will be on one line.</li>
+                <li><code>wrap</code>: flex items will wrap onto multiple lines, from top to buttom.</li>
+                <li><code>wrap-reverse</code>: flex items will wrap onto multiple lines from bottom to top.
+                </li>
+            </ul>
+            <h3>Example</h3>
+            <pre class="codeback">
+            <code>
+ .container{
+    flex-wrap: nowrp | wrap | wrap-reverse;
+ }
+            </code>
+                </pre>
+            <h3>
+                References
+            </h3>
+            <ol>
+                <li>Coyier,Chris<span>(dec 9th , 2013)</span> <a href="">A Complete Guide to
+                        Flexbox.</a>CSS Tricks</li>
+                <!--check colour of it-->
+            </ol>
+        </div>
+    </section>
+
+    <section id="PARTB">
+        <h1 class="newfont">
+            Part B - Building &amp; Styling Tables
+        </h1>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="whitespace"></th>
+                        <!--Not to sure if th can just go blank-->
+                        <th> Smart Starter </th>
+                        <th>Smart Medium</th>
+                        <th>Smart Business</th>
+                        <th>Smart Deluxe</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th class="columnheader">Storage Space</th>
+                    <td>1GB</td>
+                    <td>100GB</td>
+                    <td>1TB</td>
+                    <td> Unlimited </td>
+                </tr>
+                <tr>
+                    <th class="columnheader">Bandwidth</th>
+                    <td>50GB</td>
+                    <td>100GB</td>
+                    <td>150GB</td>
+                    <td> Unlimited </td>
+                </tr>
+                <tr>
+                    <th class="columnheader">MySQL Databases</th>
+                    <td>Unlimited</td>
+                    <td> Unlimited </td>
+                    <td> Unlimited </td>
+                    <td> Unlimited </td>
+                </tr>
+                <tr>
+                    <th class="columnheader">Setup</th>
+                    <td>$19.90</td>
+                    <td>$12.90</td>
+                    <td>free</td>
+                    <td>free</td>
+                </tr>
+                <tr>
+                    <th class="columnheader">PHP 7</th>
+                    <td class="green"><i class="fas fa-check"></i></td>
+                    <td class="green"><i class="fas fa-check"></i></td>
+                    <td class="green"><i class="fas fa-check"></i></td>
+                    <td class="green"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th class="columnheader">Ruby on Rails</th>
+                    <td class="red"><i class="fas fa-times"></i></td>
+                    <td class="red"><i class="fas fa-times"></i></td>
+                    <td class="green"><i class="fas fa-check"></i></td>
+                    <td class="green"><i class="fas fa-check"></i></td>
+                </tr>
+                <tr class="greycolumn">
+                    <th class="greycolumn">Price per Month</th>
+                    <td>$2.90</td>
+                    <td>$5.90</td>
+                    <td>$9.90</td>
+                    <td>$14.90</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="PARTC">
+        <h1> Part C - Flexbox Navigation </h1>
+        <div class="navigation">
+            <div class = "ii">
+                <i class="fas fa-quidditch"></i>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="Products.html"> Products </a></li>
+                        <li><a href="Services.html"> Services </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="search">
+                <form id = "Go">
+                    <input class="nosub" type="search" placeholder="Search...">
+                    <i class="fas fa-search"></i>
+                </form>
+                <div class="navbutton">
+                    <button type="submit">Go</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="PARTD">
+        <h1> Part D - Login Form </h1>
+        <div class="main">
+            <h2>Login</h2>
+
+            <form action="processnom.php" method="post">
+                <div>
+                    <label for="username"> Username </label>
+                </div>
+                <div>
+                    <input type="text" id="username" name="username" placeholder="type your username"><i
+                        class="fas fa-user"></i>
+                </div>
+                <div>
+                    <label for="password"> Password </label>
+                </div>
+                <div>
+                    <input type="password" id="password" name="password" placeholder="Type your password"><i
+                        class="fas fa-lock"></i>
+                </div>
+                <div>
+                    <a class="hover" href="">Forgot Password ?</a>
+                    <button type="submit" class="submit">Login</button>
+                </div>
+            </form>
+
+            <div>
+                <h2 class="small">Or Sign In Using Social</h2>
+                <div class="container">
+                    <div class="wrapper">
+                        <a href="#" class="icon-container icon-container-facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="icon-container icon-container-twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="icon-container icon-container-twitter">
+                            <i class="fab fa-apple"></i>
+                        </a>
+                    </div>
+                </div>
+                <h2 class="small"> Or Sign Up With Email</h2>
+                <div class="sign">
+                    <a href="">Sign Up</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
